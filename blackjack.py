@@ -5,7 +5,7 @@ import random
 def load_images(card_images):
     suits = ['heart', 'club', 'diamond', 'spade']
     face_cards = ['jack', 'queen', 'king']
-    
+    print("Load Images") 
     if tkinter.TkVersion >= 8.6:
         extension = 'png'
     else:
