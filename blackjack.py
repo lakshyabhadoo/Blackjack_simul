@@ -10,6 +10,7 @@ def load_images(card_images):
         extension = 'png'
     else:
         extension = 'ppm'
+    
     # retrieving the image from each suit fot the cards
     for suit in suits:
         for card in range(1, 11):
