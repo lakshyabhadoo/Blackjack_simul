@@ -5,7 +5,8 @@ import random
 def load_images(card_images):
     suits = ['heart', 'club', 'diamond', 'spade']
     face_cards = ['jack', 'queen', 'king']
-
+    
+    print("Load Images")
     if tkinter.TkVersion >= 8.6:
         extension = 'png'
     else:
@@ -46,6 +47,7 @@ def score_hand(hand):
             ace = True
             card_value = 11
         score += card_value
+        
         # if we would bust, check if there is an ace and subtract 10
         if score > 21 and ace:
             score -= 10
